@@ -1,0 +1,28 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Custom styles for Leaflet maps */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.custom-property-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.custom-popup-detail .leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.custom-popup-detail .leaflet-popup-content {
+  margin: 12px;
+}
+
+.custom-popup-detail .leaflet-popup-tip {
+  background: white;
+}
