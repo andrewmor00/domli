@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom scrollbar styles */
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -12,7 +11,6 @@
   display: none;
 }
 
-/* Smooth scrolling for mobile */
 .scrollbar-hide {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
@@ -28,7 +26,6 @@
   background: linear-gradient(135deg, #e3f0ff 0%, #f6faff 60%, #fff 100%);
 }
 
-/* Mobile-first approach */
 @media (max-width: 767px) {
   .hero-section {
     min-height: auto;
@@ -152,7 +149,6 @@
   flex-wrap: wrap;
 }
 
-/* Mobile styles for switch buttons */
 @media (max-width: 640px) {
   .hero-section__switch-group {
     flex-direction: row;
@@ -177,7 +173,6 @@
   }
 }
 
-/* Desktop styles for switch buttons */
 @media (min-width: 641px) {
   .btn-switch {
     padding: 12px 28px;
@@ -220,7 +215,6 @@
   align-items: stretch;
 }
 
-/* Mobile styles for select group */
 @media (max-width: 640px) {
   .hero-section__select-group {
     flex-direction: column;
@@ -264,7 +258,6 @@
   }
 }
 
-/* Desktop styles for select group */
 @media (min-width: 641px) {
   .hero-section__select-group {
     border: 2px solid #2563eb;
@@ -419,7 +412,6 @@
   min-width: 400px;
 }
 
-/* === Carousel Block === */
 .carousel-block {
   position: relative;
   width: 90%;
