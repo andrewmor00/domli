@@ -1,35 +1,24 @@
 {
-  "name": "domli",
+  "name": "domli-frontend",
   "version": "1.0.0",
-  "description": "Domli Real Estate Platform",
+  "description": "Domli Real Estate Platform - Frontend",
   "main": "index.js",
   "scripts": {
-    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "cd frontend && npm run dev",
     "build": "cd frontend && npm run build",
-    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
-    "start": "pm2 start ecosystem.config.js",
-    "start:prod": "pm2 start ecosystem.config.js --env production",
-    "stop": "pm2 stop ecosystem.config.js",
-    "restart": "pm2 restart ecosystem.config.js",
-    "reload": "pm2 reload ecosystem.config.js",
-    "delete": "pm2 delete ecosystem.config.js",
-    "logs": "pm2 logs",
-    "monit": "pm2 monit",
-    "status": "pm2 status",
-    "setup": "npm run install:all && npm run build",
-    "deploy": "pm2 deploy production"
+    "preview": "cd frontend && npm run preview",
+    "install": "cd frontend && npm install",
+    "lint": "cd frontend && npm run lint"
   },
   "keywords": [
     "real-estate",
     "react",
-    "express",
-    "postgresql"
+    "frontend",
+    "vite",
+    "tailwindcss"
   ],
   "author": "Domli Team",
   "license": "MIT",
-  "devDependencies": {
-    "concurrently": "^8.2.2"
-  },
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
